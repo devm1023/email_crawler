@@ -1,6 +1,7 @@
 # MailCrawler
 An autobot designed to crawl emails from different sources like pastebin, slexy etc.<br>
 Pretty useful for spammers and email marketers<br>
+This program was used in a private project for email scraping<br>
 # Usage:
 --------
 python bot.py --pb --slx --debp --src --srx "something to search" 3 --proxy<br>
