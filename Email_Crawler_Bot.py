@@ -1,5 +1,7 @@
 # Programmed by Choyon Ahmed
-# Private project on XBTFreelancer.com
+# USAGE: python bot.py --pb --slx --debp --src --srx "something to search" 3 --proxy
+# replace --n to skip a feature
+# 3 represents number of pages to search
 import urllib, httplib, urllib2, re, os, sys, ssl, socket
 import time
 from platform import system
