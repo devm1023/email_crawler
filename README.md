@@ -5,6 +5,8 @@ Pretty useful for spammers and email marketers
 --------
 python bot.py --pb --slx --debp --src --srx "something to search" 3 --proxy
 you can turn a feature off by changing the parameter to --n
+# Brief:
+--------
 Here,
 --pb = Scans pastebin recent archive
 --slx = Scans Slexy recent archive
