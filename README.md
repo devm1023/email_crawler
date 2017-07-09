@@ -1,3 +1,6 @@
+# UPDATE:
+---------
+An issue has been notified. The repository will be updated again with fixed working code and with more better commands.
 # MailCrawler
 An autobot designed to crawl/scrape emails from different sources like pastebin, slexy etc.<br>
 Pretty useful for spammers and email marketers<br>
