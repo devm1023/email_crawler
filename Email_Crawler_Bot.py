@@ -1,4 +1,5 @@
 # Programmed by Choyon Ahmed
+# Special thanks to Rayhan Ahmed for writing the SearX Search Engine Crawler function
 # It will be lovely if you buy me a coffee by donating some dollars in BTC for this open source project
 # Payment address available in the profile description
 # USAGE: python bot.py
