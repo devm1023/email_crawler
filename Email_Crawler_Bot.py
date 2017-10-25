@@ -1,22 +1,41 @@
 # Programmed by Choyon Ahmed
-# USAGE: python bot.py --pb --slx --debp --src --srx "something to search" 3 --proxy
-# replace --n to skip a feature
-# 3 represents number of pages to search
-import urllib, httplib, urllib2, re, os, sys, ssl, socket
+# It will be lovely if you buy me a coffee by donating some dollars in BTC for this open source project
+# Payment address available in the profile description
+# USAGE: python bot.py
+# After running the script, you will be asked few question
+# to confirm the program facilities that you love to use
+# NOTE: The above program is designed to run 24x7 in VPS, if your IP is banned for any reason, the script will not be responsible
+# Code Revised: 25-10-2017 09:26PM (GMT + 06)
+# Tested as working in Linux & Windows
+import urllib, httplib, urllib2, re, os, ssl, socket
 import time
 from platform import system
 from random import randint
 socket.setdefaulttimeout(15)
-ctx = ssl.create_default_context()
-ctx.check_hostname = False
-ctx.verify_mode = ssl.CERT_NONE
-opener = urllib2.build_opener(urllib2.HTTPSHandler(context=ctx))
-opener.addheaders = [('User-agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A')]
+ctx = None
+#ctx.check_hostname = False
+#ctx.verify_mode = ssl.CERT_NONE
+#opener = urllib2.build_opener(urllib2.HTTPSHandler(context=None))
+#opener.addheaders = [('User-agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A')]
 opener = urllib2.build_opener()
 opener.addheaders = [('User-agent', 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A')]
 headers={"User-agent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A"}
 try:
-    script, pbin, slx, debp, cus, srx, dork, pagedepth, prox = sys.argv
+    open('collections.txt', 'r').close()
+except:
+    open('collections.txt', 'w+').close()
+try:
+    pbin = raw_input('Enable pastebin lookup? (y/n): ')
+    slx = raw_input('Enable slexy lookup? (y/n): ')
+    debp = raw_input('Enable paste.debian.org lookup? (y/n): ')
+    cus = raw_input('Enable custom lookup? (y/n): ')
+    srx = raw_input('Enable searx lookup? (y/n): ')
+    if srx == 'y':
+        dork = raw_input('type anything as keyword for the search engine(ex. halloween): ')
+        pagedepth = int(input('enter amount of pages to look? (in integer number): '))
+    prox = raw_input('Enable proxy? (y/n): ')
+    if prox == 'y':
+        prox = '--prox'
     #that damn blacklist will be created if not in there
     open('blacklist.txt', 'a+').close()
     open('sources.txt', 'a+').close()
@@ -190,26 +209,24 @@ try:
     print '5. Scan from File Urls'
     print '6. Exit'
     while 1:
-        if pbin == '--pb':
+        if pbin == 'y':
             print 'Looking in pastebin ...'
             pastebin(prox)
-        if slx == '--slx':
+        if slx == 'y':
             print 'Looking in slexy ...'
             slexy(prox)
-        if debp == '--debp':
+        if debp == 'y':
             print 'Looking in debpaste'
             debpaste(prox)
-        if cus == '--src':
+        if cus == 'y':
             print 'Looking in File(sources.txt)'
             customurl(prox)
-        if srx == '--srx':
+        if srx == 'y':
             print 'Attempting scan in Searx'
             searx(dork, pagedepth, prox)
-        print 'Total emails in collections now: ',len(open('collections.txt', 'r+').readlines())
+        print 'Total emails in collections now: ',len(open('collections.txt', 'a+').readlines())
         time.sleep(3)
 except:
     print 'USAGE: python bot.py --pb --slx --debp --src --srx "something to search" 3 --proxy'
     print 'replace --n to skip a feature'
     print '3 represents number of pages to search'
-
-
