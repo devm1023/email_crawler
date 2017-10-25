@@ -7,18 +7,15 @@ Pretty useful for spammers and email marketers<br>
 This program was used in a private project for email scraping<br>
 # Usage:
 --------
-python bot.py --pb --slx --debp --src --srx "something to search" 3 --proxy<br>
-you can turn a feature off by changing the parameter to --n<br>
+python bot.py<br>
+feature turning on/off is now more user friendly.<br>
 # Brief:
 --------
 Here,<br>
---pb = Scans pastebin recent archive<br>
---slx = Scans Slexy recent archive<br>
---debp = Scans paste.debian.net recent archive<br>
---src = = Scans pregiven urls from sources.txt<br>
---srx "something to search" 3 = scans SearX search engine with keyword "something to search" and pagedepth of 3<br>
---proxy = Enables proxy<br>
+simply type<br>
+python bot.py<br>
+It will ask you to choose the features available. type y/n to confirm the activation of a feature.<br>
 # Contact Support:
-facebook.com/TheChoyon
+thechoyon@outlook.com (How long it may take to get response? No guarantee. But, you will get reply.)
 # Need Some Custom Crawlers?
-Send a mail to choyonbd.tk@gmail.com describing your details regarding the crawler/scraper you want to be programmed [I accept Bitcoin payments only]
+Send a mail to thechoyon@outlook.com describing your details regarding the crawler/scraper you want to be programmed [I accept Bitcoin payments only]
