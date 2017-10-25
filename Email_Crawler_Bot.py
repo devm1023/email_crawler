@@ -36,7 +36,7 @@ try:
         pagedepth = int(input('enter amount of pages to look? (in integer number): '))
     prox = raw_input('Enable proxy? (y/n): ')
     if prox == 'y':
-        prox = '--prox'
+        prox = '--proxy'
     #that damn blacklist will be created if not in there
     open('blacklist.txt', 'a+').close()
     open('sources.txt', 'a+').close()
@@ -201,14 +201,6 @@ try:
 
     # Main program interface starts from below
     print 'Total emails in collections: ',len(open('collections.txt', 'r+').readlines())
-    print 'Hello Sir, welcome to your crawler index :)'
-    print 'Select one of the below options to execute:'
-    print '1. Search Pastebin Now'
-    print '2. Search Slexy Now'
-    print '3. Search Paste.Debian.net Now'
-    print '4. Search SearX Now'
-    print '5. Scan from File Urls'
-    print '6. Exit'
     while 1:
         if pbin == 'y':
             print 'Looking in pastebin ...'
@@ -225,9 +217,7 @@ try:
         if srx == 'y':
             print 'Attempting scan in Searx'
             searx(dork, pagedepth, prox)
-        print 'Total emails in collections now: ',len(open('collections.txt', 'a+').readlines())
+        print 'Total emails in collections now: ',len(open('collections.txt', 'r+').readlines())
         time.sleep(3)
 except:
-    print 'USAGE: python bot.py --pb --slx --debp --src --srx "something to search" 3 --proxy'
-    print 'replace --n to skip a feature'
-    print '3 represents number of pages to search'
+    print 'USAGE: python bot.py'
