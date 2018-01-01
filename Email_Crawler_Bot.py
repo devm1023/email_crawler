@@ -6,7 +6,7 @@
 # After running the script, you will be asked few question
 # to confirm the program facilities that you love to use
 # NOTE: The above program is designed to run 24x7 in VPS, if your IP is banned for any reason, the script will not be responsible
-# Code Revised: 25-10-2017 09:26PM (GMT + 06)
+# Code Revised: 01-01-2018 11:07AM (GMT + 06)
 # Tested as working in Linux & Windows
 import urllib, httplib, urllib2, re, os, ssl, socket
 import time
