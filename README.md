@@ -18,4 +18,4 @@ It will ask you to choose the features available. type y/n to confirm the activa
 # Contact Support:
 The "Issues" tab is available in this same page in case you need any help or if you see any bugs that needs to be informed. I will try fixing them if possible.
 # Need Some Custom Crawlers?
-Send a mail to thechoyon@outlook.com describing your details regarding the crawler/scraper you want to be programmed [I accept Bitcoin payments only]
+Type in your Skype ID in the "Issues" tab and say that you want to order a crawler program. Note that, I accept payment through Perfect Money only! Just in case you don't have that option as a payment, it's not important to ask for anything to me :)
