@@ -28,7 +28,7 @@ except:
 try:
     pbin = raw_input('Enable pastebin lookup? (y/n): ')
     slx = raw_input('Enable slexy lookup? (y/n): ')
-    debp = raw_input('Enable paste.debian.org lookup? (y/n): ')
+    debp = raw_input('Enable paste.debian.net lookup? (y/n): ')
     cus = raw_input('Enable custom lookup? (y/n): ')
     srx = raw_input('Enable searx lookup? (y/n): ')
     if srx == 'y':
