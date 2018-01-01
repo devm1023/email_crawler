@@ -1,6 +1,6 @@
-# UPDATE(25.10.2017)
+# UPDATE(01.01.2018)
 ---------
-The issue regarding script has been fixed and now the cmdline UI has been designed to be more user friendly.
+A typo regarding the interface has been fixed upon report from an user.
 # MailCrawler
 An autobot designed to crawl/scrape emails from different sources like pastebin, slexy etc.<br>
 Pretty useful for spammers and email marketers<br>
