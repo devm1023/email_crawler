@@ -16,6 +16,6 @@ simply type<br>
 python bot.py<br>
 It will ask you to choose the features available. type y/n to confirm the activation of a feature.<br>
 # Contact Support:
-thechoyon@outlook.com (How long it may take to get response? No guarantee. But, you will get reply.)
+The "Issues" tab is available in this same page in case you need any help or if you see any bugs that needs to be informed. I will try fixing them if possible.
 # Need Some Custom Crawlers?
 Send a mail to thechoyon@outlook.com describing your details regarding the crawler/scraper you want to be programmed [I accept Bitcoin payments only]
